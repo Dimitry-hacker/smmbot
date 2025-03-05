@@ -48,7 +48,7 @@ def get_constructor_markup(data):
         types.InlineKeyboardButton('-1', callback_data='reels-')
     )
     markup.add(
-       types.InlineKeyboardButton(f'🎯 Targeting: {"250,000 cym" if data["targeting"] else "Yo\'q"}', callback_data='targeting')
+       types.InlineKeyboardButton(f"🎯 Targeting: {'250,000 cym' if data['targeting'] else 'Yoq'}", callback_data='targeting')
     )
     markup.add(types.InlineKeyboardButton('🛒 Buyurtma berish', callback_data='order_constructor'))
     markup.add(types.InlineKeyboardButton('⬅️ Orqaga', callback_data='main_menu'))
